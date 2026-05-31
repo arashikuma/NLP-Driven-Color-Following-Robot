@@ -1,4 +1,4 @@
-# Voice-Controlled Color-Following Robot (PiCar-4WD)
+# NLP-Driven Color-Following Robot
 
 An interactive, voice-controlled robot system built on top of the **PiCar-4WD** platform. This project splits the workload efficiently: a laptop handles heavy lifting like Automatic Speech Recognition (ASR) via OpenAI's Whisper, and streams lightweight UDP commands to a Raspberry Pi for real-time OpenCV color tracking and motor control.
 
