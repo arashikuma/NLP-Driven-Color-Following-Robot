@@ -77,5 +77,14 @@ python3 nlp.py
 3）Hold the Spacebar to talk, release to send the command. Press ESC to exit the laptop client.
 
 
+## 👥 Authors
 
+| Name | GitHub Username |
+| :--- | :--- |
+| QI LIU| [@QI LIU](https://github.com/qi-liu-dev) |
+| BINGHAO GUO | [@BINGHAO GUO](https://github.com/BGuoMax) |
+| NURIFEIYAN | [@NURIFEIYAN](https://github.com/nurifeiya) |
+| XiONG| [@XiONG](https://github.com/arashikuma) |
+
+---
 
