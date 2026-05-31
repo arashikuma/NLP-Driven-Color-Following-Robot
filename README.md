@@ -23,11 +23,7 @@ An interactive, voice-controlled robot system built on top of the **PiCar-4WD** 
 
 ## 📋 Supported Voice Commands
 
-### 1. Object Following Mode
-* *"Follow red"* / *"Track the green object"* / *"Switch to yellow"*
-* The robot will approach the object and maintain a predefined distance zone (`DESIRED_AREA`).
-
-### 2. Manual Movement Commands
+### 1. English voice movement commands
 * `go forward N cm` / `go straight N cm`
 * `turn left N degree` / `turn right N degree` / `turn clockwise N degree`
 * **Sequences**: Commands can be chained using "and" (e.g., *"turn left 90 degrees and go straight 30 cm"*).
