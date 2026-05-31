@@ -1,0 +1,19 @@
+```text
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Project specific
+object_profiles.json
+*.wav
+
+# OS files
+.DS_Store
+Thumbs.db
