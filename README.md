@@ -4,7 +4,7 @@ An interactive, voice-controlled robot system built on top of the **PiCar-4WD** 
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Push-to-Talk Voice Control**: Hold `SPACE` on your laptop to issue English voice commands, and release to transmit.
 * **OpenCV Object Tracking**: Real-time HSV-based color masking and tracking for `red`, `blue`, `green`, `yellow`, and `pink` objects.
@@ -13,7 +13,7 @@ An interactive, voice-controlled robot system built on top of the **PiCar-4WD** 
 
 ---
 
-## 📂 System Architecture & File Structure
+## System Architecture & File Structure
 
 * `nlp.py` *(Runs on Laptop)*: Captures microphone audio, transcribes it using Whisper (`tiny` model), parses natural language into UDP command strings, and sends them to the Pi.
 * `robot_color_follow.py` *(Runs on Raspberry Pi)*: The main runtime script. It captures camera frames, tracks the target color contour using OpenCV, and drives the PiCar wheels.
@@ -21,9 +21,12 @@ An interactive, voice-controlled robot system built on top of the **PiCar-4WD** 
 
 ---
 
-## 📋 Supported Voice Commands
+## Supported Voice Commands
+### 1. Color-following commands
+* `follow the red object`
+* `switch to pink object`
 
-### 1. English voice movement commands
+### 2. Manual movement commands
 * `go forward N cm` / `go straight N cm`
 * `turn left N degree` / `turn right N degree` / `turn clockwise N degree`
 * **Sequences**: Commands can be chained using "and" (e.g., *"turn left 90 degrees and go straight 30 cm"*).
@@ -33,7 +36,7 @@ An interactive, voice-controlled robot system built on top of the **PiCar-4WD** 
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### 1. Install Dependencies
 Ensure you have Python 3.8+ installed on both devices. Clone this repository on both your laptop and Raspberry Pi, then run:
@@ -53,7 +56,7 @@ Ubuntu/Linux: sudo apt install portaudio19-dev
 1）Open nlp.py and modify the RPI_IP constant to match your Raspberry Pi's actual IP address on the local network:
 
 ```python
-RPI_IP = "192.168.1.100"  # Replace with your Raspberry Pi's IP address
+RPI_IP = "10.42.0.1"  # Replace with your Raspberry Pi's IP address
 ```
 2）(Optional) If the robot overshoots distances or angles during manual commands, tune these calibration constants in robot_color_follow.py:
 ```python
